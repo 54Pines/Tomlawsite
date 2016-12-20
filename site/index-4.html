@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Services</title>
+	<meta charset="utf-8">
+	<meta name = "format-detection" content = "telephone=no" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/grid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/contact-form.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-migrate-1.2.1.js"></script>
+	<script src='//maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false'></script>  
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<script src="js/jquery.mobile.customized.min.js"></script>
+	<script src="js/wow/wow.js"></script>
+	<script>
+		$(document).ready(function () {
+			if ($('html').hasClass('desktop')) {
+				new WOW().init();
+			}
+		});
+	</script
+>	<!--<![endif]-->
+
+
+	<script src="js/TMForm.js"></script>
+	<script src="js/modal.js"></script>
+
+
+	<!--[if lt IE 9]>
+  <div style=' clear: both; text-align:center; position: relative;'>
+   <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode">
+     <img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." />
+   </a>
+  </div>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  	<script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+  <![endif]-->
+</head>
+
+<body>
+
+	<!--========================================================
+														HEADER 
+	=========================================================-->
+	<header id="header" class="content_pages">
+		<div id="stuck_container">
+			<div class="container">
+				<div class="row">
+					<div class="grid_5">
+						<h1 class="logo2"><a href="index.html"><img src="images/logo2.png" alt="Femida"></a> </h1>
+					</div>
+					<div class="grid_7">
+						<nav>
+							<ul class="sf-menu">
+								<li><a href="index.html">Home<strong></strong></a></li>
+								<li><a href="index-1.html">About<strong></strong></a></li>
+								<li><a href="index-2.html">Services<strong></strong></a>
+									<ul class="submenu">
+										<li><a href="#">Columns 01</a></li>
+										<li><a href="#">Columns 02</a></li>
+										<li><a href="#">Columns 03</a>
+											<ul class="submenu2">
+												<li><a href="#">Columns 04</a></li>
+												<li><a href="#">Columns 05</a></li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li><a href="index-3.html">Practice<strong></strong></a></li>
+								<li class="current" id="last-li"><a href="index-4.html">Contacts<strong></strong></a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--========================================================
+														CONTENT 
+	=========================================================-->
+	<section id="content" class="content_pages">
+
+
+
+		<div class="container marTop12">
+			<h2>how to find us</h2>
+
+			<section class="content_map  wow fadeInUp">
+				<div class="google-map-api"> 
+					<div id="map-canvas" class="gmap"></div> 
+				</div> 
+			</section>
+			<p class=" wow fadeInUp">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros.</p>
+
+			<div class="wrapper color1">
+				<div class="col3  wow fadeInLeft">
+					<i class="fa fa-home  icon2"></i>
+					<div class="box">
+						<p class="marTop9">8901 Marmora Road,<br>Glasgow, D04 89GR.</p>
+					</div>
+				</div>
+
+				<div class="col4  wow fadeInUp">
+					<i class="fa fa-phone  icon2"></i>
+					<div class="box">
+						<p class="marTop9">+1 800 559 6580<br>+1 800 603 6035</p>
+					</div>
+				</div>
+
+				<div class="col4  wow fadeInRight">
+					<i class="fa fa-envelope icon2"></i>
+					<div class="box">
+						<p class="marTop9"><a href="mailto:" class="link2">mail@demolink.org</a></p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+
+
+		<div class="container marTop8">
+			<h2>contact form</h2>
+			<form id="contact-form">
+				<div class="contact-form-loader"></div>
+				<fieldset>
+					<div class="row">
+						<div class="grid_6">
+							<label class="name">
+								<input type="text" name="name" placeholder="Name" value="" data-constraints="@Required @JustLetters"  />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid name.</span>
+							</label>
+						 
+							<label class="email">
+								<input type="text" name="email" placeholder="E-mail" value="" data-constraints="@Required @Email" />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid email.</span>
+							</label>
+							<label class="phone">
+								<input type="text" name="phone" placeholder="Phone" value="" data-constraints="@Required @JustNumbers" />
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*This is not a valid phone.</span>
+							</label>
+						</div>
+
+						<div class="grid_6">
+							<label class="message">
+								<textarea name="message" placeholder="Message" data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+								<span class="empty-message">*This field is required.</span>
+								<span class="error-message">*The message is too short.</span>
+							</label>
+						</div>
+
+					</div>
+					
+					
+					<div class="btns">
+						<!-- <a href="#" class="more_btn" data-type="reset">Clear</a> -->
+						<a href="#" class="more_btn" data-type="submit">send message</a>
+					</div>
+				</fieldset> 
+				<div class="modal fade response-message">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title">Modal title</h4>
+							</div>
+							<div class="modal-body">
+								You message has been sent! We will be in touch soon.
+							</div>      
+						</div>
+					</div>
+				</div>
+			</form>
+
+
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</section>
+
+
+
+	<!--========================================================
+														FOOTER 
+	=========================================================-->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="grid_3 wow fadeInLeft" data-wow-duration="" data-wow-delay="0.3s">
+					<h1 class="logo_footer"><a href="index.html"><img src="images/logo_footer.png" alt="Femida"></a> </h1>
+					<p class="txt_priv wow fadeInUp" data-wow-delay="1.1s">&copy; <span id="copyright-year"></span> <br><a href="index-5.html">Privacy Policy</a></p>
+				</div>
+
+				<div class="grid_3 wow fadeInLeft" data-wow-duration="" data-wow-delay="0.1s">
+					<ul class="list2">
+						<li class=" wow fadeInUp" data-wow-delay="0.1s"><a href="#"><span class="mar2">-  </span>Business Law </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.2s"><a href="#"><span class="mar2">-  </span>Class Action Lawsuits </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.3s"><a href="#"><span class="mar2">-  </span>Criminal Law </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.4s"><a href="#"><span class="mar2">-  </span>Elder Abuse Cases</a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.5s"><a href="#"><span class="mar2">-  </span>Employment Law </a></li>
+					</ul>
+				</div>
+
+				<div class="grid_3 wow fadeInLeft" data-wow-duration="" data-wow-delay="0.2s">
+					<ul class="list2">
+						<li class=" wow fadeInUp" data-wow-delay="0.5s"><a href="#"><span class="mar2">-  </span>Family Law </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.6s"><a href="#"><span class="mar2">-  </span>Immigration Law</a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.7s"><a href="#"><span class="mar2">-  </span>Insurance Law </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.8s"><a href="#"><span class="mar2">-  </span>Intellectual Property </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="0.9s"><a href="#"><span class="mar2">-  </span>Juvenile Law </a></li>
+					</ul>
+				</div>
+
+				<div class="grid_3 wow fadeInLeft" data-wow-duration="" data-wow-delay="0.4s">
+					<ul class="list2">
+						<li class=" wow fadeInUp" data-wow-delay="1.0s"><a href="#"><span class="mar2">-  </span>Malpractice Law </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="1.1s"><a href="#"><span class="mar2">-  </span>Real Property Law</a></li>
+						<li class=" wow fadeInUp" data-wow-delay="1.2s"><a href="#"><span class="mar2">-  </span>Securities Law </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="1.3s"><a href="#"><span class="mar2">-  </span>Social Security Law </a></li>
+						<li class=" wow fadeInUp" data-wow-delay="1.4s"><a href="#"><span class="mar2">-  </span>Tenant Law</a></li>
+					</ul>
+				</div>
+
+
+
+
+			</div>
+		</div>
+	</footer>
+
+
+
+<script src="js/script.js"></script>
+
+
+
+<script type="text/javascript"> 
+	google_api_map_init();
+	function google_api_map_init(){
+		var map;
+		var coordData = new google.maps.LatLng(parseFloat(40.646197), parseFloat(-73.9724068,14)); 
+		var marker;
+
+		var markerIcon = { 
+				url: "images/gmap_marker.png", 
+				size: new google.maps.Size(42, 65), 
+				origin: new google.maps.Point(0,0), 
+				anchor: new google.maps.Point(21, 70) 
+		};
+
+		// styleArray=[{"featureType":"all","stylers":[{"saturation":-100},{"gamma":0.5}]}]
+
+		function initialize() { 
+			var mapOptions = { 
+				zoom: 14, 
+				center: coordData, 
+				scrollwheel: false, 
+				// styles: styleArray 
+			}
+
+			var contentString = "<div></div>"; 
+			var infowindow = new google.maps.InfoWindow({ 
+				content: contentString, 
+				maxWidth: 200 
+			});
+			 
+			var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions); 
+			marker = new google.maps.Marker({ 
+				map:map, 
+				draggable:true, 
+				position: coordData, 
+				icon: markerIcon 
+			});
+			
+		}
+		google.maps.event.addDomListener(window, "load", initialize); 
+	}
+</script>
+
+
+
+</body>
+</html>
